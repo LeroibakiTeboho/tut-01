@@ -4,7 +4,7 @@ import GsapFromTo from "@/components/GsapFromTo";
 import GsapTimeline from "@/components/GsapTimeline";
 import GsapStagger from "@/components/GsapStagger";
 import GsapScrollTrigger from "@/components/GsapScrollTrigger";
-
+import GsapText from "@/components/GsapText";
 
 
 
@@ -16,7 +16,8 @@ export default function Home() {
       {/* <GsapFromTo /> */}
       {/* <GsapTimeline /> */}
       {/* <GsapStagger /> */}
-      <GsapScrollTrigger />
+      {/* <GsapScrollTrigger /> */}
+      <GsapText />
     </div>
   );
 }

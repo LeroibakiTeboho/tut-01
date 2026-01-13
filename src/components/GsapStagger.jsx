@@ -10,13 +10,13 @@ const GsapStagger = () => {
       borderRadius: "100%",
       repeat: -1,
       yoyo: true,
-      stagger: 0.1,
+      // stagger: 0.1,
 
       stagger: {
-        amount: 1.5,
-        grid: [2,1],
+        amount: 2,
+        grid: [1,1],
         axis: "y",
-        ease: 'circ.inOut',
+        ease: 'bounce.inOut',
         from: "center"
       }
     });
@@ -32,6 +32,7 @@ const GsapStagger = () => {
         <div className="w-15 h-15 bg-indigo-600 rounded-lg stagger-box"></div>
         <div className="w-15 h-15 bg-indigo-700 rounded-lg stagger-box"></div>
         <div className="w-15 h-15 bg-indigo-800 rounded-lg stagger-box"></div>
+        <div className="w-15 h-15 bg-indigo-900 rounded-lg stagger-box"></div>
       </div>
     </div>
   );

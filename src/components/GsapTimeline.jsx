@@ -12,14 +12,14 @@ const GsapTimeline = () => {
 
   useGSAP(() => {
     timeline.to("#yellow-box", {
-      x: 250,
+      x: 80,
       rotation: 360,
       borderRadius: "100%",
       duration: 3,
       ease: "bounce.inOut",
     });
     timeline.to("#yellow-box", {
-      y: -250,
+      y: -80,
       scale: 1,
       rotation: 360,
       borderRadius: "8px",
@@ -28,7 +28,7 @@ const GsapTimeline = () => {
     });
     timeline.to("#yellow-box", {
       x: 0,
-      scale: 2,
+      scale: 1.5,
       rotation: 360,
       borderRadius: "100%",
       duration: 2,
@@ -48,7 +48,7 @@ const GsapTimeline = () => {
       <h2 className="mt-10 text-3xl font-bold">Timeline:</h2>
 
       <button
-      className="py-4 px-6 bg-blue-500 mt-5 rounded-3xl text-white active:scale-[0.95] transition-all duration-150 shadow-md shadow-gray-500"
+      className="py-4 px-6 bg-blue-500 mt-5 mb-10 rounded-3xl text-white active:scale-[0.95] transition-all duration-150 shadow-md shadow-gray-500"
         onClick={() => {
           if (timeline.isActive()) {
             timeline.pause();
@@ -60,7 +60,7 @@ const GsapTimeline = () => {
         Play/Pause
       </button>
 
-      <div className="mt-20">
+      <div className="mt-24">
         <div
           id="yellow-box"
           className="w-20 h-20 bg-yellow-500 rounded-lg flex justify-center items-center text-white font-bold"
